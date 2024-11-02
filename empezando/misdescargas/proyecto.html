@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8" /><title>jeiset</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="proyecto.css">
+
+
+    </head>
+
+    <body>
+
+        <h1>cafe toro´s gourmet</h1>          
+       
+        <img src="cafe-capuchino-paulina-cocina-recetas.jpg" 
+        width="20% height=60%"> </img> 
+
+        <form action="http://127.0.0.1:5500/empezando/proyecto.html" method="get">
+            
+            <p>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario"><br/>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña"><br/>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </p>
+        </form>
+
+         <header class="header">
+            <div class="menu">
+                <!-- Contenido del menú aquí -->
+            </div>
+        </header> 
+            <!--seccion principal-->
+        <main>
+         <h1>ingresar</h1>
+
+         <!--boton para administrador-->
+         <div class="section">
+            <button id="admin-btn">Administrador</button>
+
+            <!-- Opciones del Administrador -->
+            <div class="container">
+                <h1>Generar Informe</h1>
+                <div class="button-group">
+                    <button id="dailyBtn">Informe Diario</button>
+                    <button id="weeklyBtn">Informe Semanal</button>
+                    <button id="monthlyBtn">Informe Mensual</button>
+                </div>
+                <div id="Informe"></div> <!-- Aquí se desplegará la información -->
+            </div>
+
+
+         <!--boton para empelado-->
+
+         
+         <div class="section">
+            <button id="empelado--">empleado</button>
+
+            <!-- Opciones empleado -->
+              <div class="empleado">
+                                
+                <div class="empleado">
+                    <!--despliegue de producto-->
+                    <label for="productos">productos:</label>
+                    <select id="productos" name="productos">
+                        <option value="tinto">tinto</option>
+                        <option value="capuchino">capuchino</option>
+                        <option value="frapes">frapes</option>
+                        <option value="cafe en leche">cafe en leche</option>
+                        <option value="granizado de cafe">granizado de cafe</option>
+                        <option value="flan de cafe">flan de cafe</option>
+                        <option value="ensalada con chispas de chocolate">ensalada con chispas de chocolate</option>
+                        <option value="aromatica">aromatica</option>
+                    </select>
+                    <!--despliegue cantidad-->
+                <label for="cantidad">cantidad:</label>
+                <select id="cantidad" name="cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <!--despliegue de validar mesas-->
+                <label for="validar mesas">validar mesas:</label>
+                <select id="validar mesas" name="validar mesas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                
+                <button id="agregar/modificar-btn">agregar/modificar</button>
+            </div>
+          </div>
+
+            
+        </main>
+    
+        <script src="proyecto.js"></script>;
+    </body>
+    </html>
